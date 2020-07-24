@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  padding: 100px 0;
+  justify-content: space-evenly;
+  background-color: #1f4068;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.form {
+  background-color: #fff;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.452);
+}
+
+.input {
+  margin-top: 10px;
+  padding: 10px;
+  appearance: none;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+  line-height: 1.5;
+  border-radius: 10px;
+  border-color: rgb(216, 216, 216);
+}
+
+input[type="text"], .select {
+  width: 400px;
+}
+
+.title-header {
+  width: 100%;
+  height: 10vh;
+  background-color: #00a1ab;
+  background-image: url('https://image.freepik.com/foto-gratis/nube-cielo-azul_1232-3108.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.title-header h1 {
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.error {
+  background-color: rgb(161, 23, 23);
+  padding: 10px;
+  color: #fff;
+}
+
+.name-city {
+  color: #fff;
+}
+
+.temperatura {
+  color: #fff;
+  font-size: 4em;
+}
+
+.estado {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .App {
+    display: flex;
+    padding: 100px 0;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    background-color: #1f4068;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    text-align: center;
+  }
+
+}
